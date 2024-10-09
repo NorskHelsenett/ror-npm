@@ -1,0 +1,32 @@
+{
+  "author": "ROR Team",
+  "description": "ROR Resources",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "typescript": "^5.6.3"
+  },
+  "keywords": [
+    "ROR",
+    "Resources"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "name": "@rork8s/ror-resources",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Norskhelsenett/ror-npm.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "bun run format && tsc",
+    "format": "prettier --write ."
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "version": "0.0.2"
+}
