@@ -3,8 +3,24 @@
   "description": "ROR Resources",
   "devDependencies": {
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.8",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "node": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./models": {
+      "default": "./dist/resources.js",
+      "import": "./dist/resources.js",
+      "node": "./dist/resources.js",
+      "require": "./dist/resources.js",
+      "types": "./dist/resources.d.ts"
+    }
   },
   "keywords": [
     "ROR",
@@ -19,14 +35,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Norskhelsenett/ror-npm.git"
+    "url": "git+https://github.com:NorskHelsenett/ror-typescript-resource-models.git"
   },
   "scripts": {
     "build": "tsc",
-    "prepublish": "bun run format && tsc",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepublish": "bun run format && tsc"
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "0.0.2"
+  "typings": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "dist/*"
+      ],
+      "models": [
+        "dist/resources.d.ts"
+      ]
+    }
+  },
+  "version": "0.0.14"
 }
