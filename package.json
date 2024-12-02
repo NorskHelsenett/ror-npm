@@ -2,9 +2,9 @@
   "author": "ROR Team",
   "description": "ROR Resources",
   "devDependencies": {
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.1",
     "prettier-plugin-tailwindcss": "^0.6.9",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   },
   "exports": {
     ".": {
@@ -55,5 +55,5 @@
       ]
     }
   },
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
